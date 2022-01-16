@@ -30,7 +30,7 @@ export default function BudgetCard({name, amount, max, hideButtons,onAddExpenseC
                     <Button variant="outline-primary" className="ms-auto" onClick={onAddExpenseClick}>
                         Add Expense
                     </Button>
-                    <Button Variant="outline-secondary" onClick={onViewExpensesClick}>View Expenses</Button>
+                    <Button variant="outline-secondary" onClick={onViewExpensesClick}>View Expenses</Button>
                 </Stack>}
             </Card.Body>
         </Card>

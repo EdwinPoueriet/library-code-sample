@@ -21,7 +21,7 @@ export const AddExpense = ({show, handleClose, defaultBudgetId}) => {
         <Modal show={show} onHide={handleClose}>
             <Form onSubmit={handleSubmit}>
                 <Modal.Header closeButton>
-                    <Modal.Title>New expense</Modal.Title>
+                    <Modal.Title>New Expense</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form.Group controlId="description" className="mb-3">

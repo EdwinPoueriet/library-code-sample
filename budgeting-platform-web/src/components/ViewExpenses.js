@@ -12,10 +12,10 @@ export const ViewExpenses = ({ budgetId, handleClose}) => {
         <Modal show={budgetId != null} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>
-                        <Stack direction="horizontal" gap="2" >
+                        <Stack direction="horizontal" gap="2">
                             <div>Expenses - {budget?.name}</div>
                             {budgetId !== UNCATEGORIZED_BUDGET_ID && (
-                                <Button onClick={()=>{
+                                <Button variant="outline-danger" onClick={()=>{
                                     deleteBudget(budget)
                                     handleClose()
                                 }}>Delete</Button>
@@ -32,7 +32,7 @@ export const ViewExpenses = ({ budgetId, handleClose}) => {
                                 <Button
                                     onClick={() => deleteExpense(expense)}
                                     size="sm"
-                                    variant="outline-danger"
+                                    variant="danger"
                                 >&times;
                                 </Button>
                             </Stack>
